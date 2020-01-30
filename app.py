@@ -30,7 +30,7 @@ def expired_token(expired_token):
 
 @jwt.token_in_blacklist_loader
 def check_if_token_in_blacklist(decrypted_token):
-    # print(decrypted_token)
+    print(decrypted_token)
     return decrypted_token['jti'] in BLACKLIST
 
 
