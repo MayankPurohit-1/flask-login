@@ -1,0 +1,13 @@
+{%extends "layout.html" %}
+{%block content %}
+<form action="/register" method="POST">
+    <p>Name:</p><input type="text" name="name">
+    <p>Username:</p><input type="text" name="username">
+    <p>Email:</p><input type="text" name="email">
+    <p>Password:</p><input type="password" name="password">
+    <p>Confirm Password:</p><input type="password" name="confirm_password"><br><br>
+    <input type="submit" value="Submit!">
+</form>
+<br>
+<a href="/login">Already registered? Click to login</a>
+{%endblock%}
